@@ -20,10 +20,7 @@ import io.rong.imageloader.core.DisplayImageOptions;
 import io.rong.imageloader.core.display.FadeInBitmapDisplayer;
 import io.rong.imkit.RongIM;
 import io.rong.imkit.widget.provider.RealTimeLocationMessageProvider;
-
 import io.rong.imlib.ipc.RongExceptionHandler;
-import io.rong.push.RongPushClient;
-import io.rong.push.common.RongException;
 
 
 public class App extends MultiDexApplication {
@@ -51,13 +48,13 @@ public class App extends MultiDexApplication {
         if (getApplicationInfo().packageName.equals(getCurProcessName(getApplicationContext()))) {
 
 //            LeakCanary.install(this);//内存泄露检测
-            RongPushClient.registerHWPush(this);
+            /*RongPushClient.registerHWPush(this);
             RongPushClient.registerMiPush(this, "2882303761517473625", "5451747338625");
             try {
                 RongPushClient.registerGCM(this);
             } catch (RongException e) {
                 e.printStackTrace();
-            }
+            }*/
 
             /**
              * 注意：

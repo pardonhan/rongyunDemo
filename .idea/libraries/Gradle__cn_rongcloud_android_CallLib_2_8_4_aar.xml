@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.rongcloud.android:CallLib:2.8.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/CallLib-2.8.4.aar/b3f1268de4b4971a7312a532b639b5ce/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/CallLib-2.8.4.aar/b3f1268de4b4971a7312a532b639b5ce/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/CallLib-2.8.4.aar/b3f1268de4b4971a7312a532b639b5ce/jars/libs/Rong_CallLib.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/CallLib-2.8.4.aar/b3f1268de4b4971a7312a532b639b5ce/jars/libs/agora-rtc-sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.rongcloud.android/CallLib/2.8.4/8e8d17f8418915f2e7eb7b630a7a44d7777579e1/CallLib-2.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.rongcloud.im">
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -255,26 +252,31 @@
                     android:scheme="rong" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.SealSearchActivity"
+        <activity
+            android:name=".ui.activity.SealSearchActivity"
             android:configChanges="orientation|keyboardHidden|locale"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateVisible|adjustPan"/>
-        <activity android:name=".ui.activity.SealSearchMoreFriendsActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.activity.SealSearchMoreFriendsActivity"
             android:configChanges="orientation|keyboardHidden|locale"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustPan"/>
-        <activity android:name=".ui.activity.SealSearchMoreGroupActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.SealSearchMoreGroupActivity"
             android:configChanges="orientation|keyboardHidden|locale"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustPan"/>
-        <activity android:name=".ui.activity.SealSearchMoreChattingRecordsActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.SealSearchMoreChattingRecordsActivity"
             android:configChanges="orientation|keyboardHidden|locale"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustPan"/>
-        <activity android:name=".ui.activity.SealSearchChattingDetailActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.SealSearchChattingDetailActivity"
             android:configChanges="orientation|keyboardHidden|locale"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustPan"/>
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".ui.activity.UpdateNameActivity"
             android:screenOrientation="portrait" />
@@ -302,8 +304,10 @@
             android:screenOrientation="portrait" />
 
         <service android:name=".server.UpdateService" />
-        <activity android:name=".ui.activity.UserDetailActivity"
-            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.activity.UserDetailActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.SharedReceiverActivity"
             android:screenOrientation="portrait">
@@ -339,9 +343,9 @@
         </receiver>
 
 
-        <!--<meta-data-->
-        <!--android:name="RONG_CLOUD_APP_KEY"-->
-        <!--android:value="e0x9wycfx7flq" />-->
+       <!-- <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="x4vkb1qpxfcjk" />-->
 
         <!-- 正式 n19jmcy59f1q9  测试 p5tvi9dst25b4  小乔 e0x9wycfx7flq-->
 

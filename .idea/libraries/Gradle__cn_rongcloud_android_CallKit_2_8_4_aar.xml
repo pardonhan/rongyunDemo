@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.rongcloud.android:CallKit:2.8.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/CallKit-2.8.4.aar/147a77980078bce18884dcb27b8b8c80/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/CallKit-2.8.4.aar/147a77980078bce18884dcb27b8b8c80/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.rongcloud.android/CallKit/2.8.4/c5948dcd67cf18bd80d96373fe4b05343c6a8ed9/CallKit-2.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

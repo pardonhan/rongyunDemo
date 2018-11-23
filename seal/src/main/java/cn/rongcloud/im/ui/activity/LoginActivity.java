@@ -65,6 +65,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         sp = getSharedPreferences("config", MODE_PRIVATE);
         editor = sp.edit();
         initView();
+       // rongConnect("wcCpJd63MbB6LtzYSP5aFnYixIkMWv8/T2RKra0Iw17IGmBX7sG0NM7u5j2YHjFYvTjK30Xf9NC1XgQS/66iIA==");
     }
 
     private void initView() {
@@ -273,27 +274,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                     if (tokenResponse.getCode() == 200) {
                         String token = tokenResponse.getResult().getToken();
                         if (!TextUtils.isEmpty(token)) {
-                            RongIM.connect(token, new RongIMClient.ConnectCallback() {
-                                @Override
-                                public void onTokenIncorrect() {
-                                    Log.e(TAG, "reToken Incorrect");
-                                }
-
-                                @Override
-                                public void onSuccess(String s) {
-                                    connectResultId = s;
-                                    NLog.e("connect", "onSuccess userid:" + s);
-                                    editor.putString(SealConst.SEALTALK_LOGIN_ID, s);
-                                    editor.apply();
-                                    SealUserInfoManager.getInstance().openDB();
-                                    request(SYNC_USER_INFO, true);
-                                }
-
-                                @Override
-                                public void onError(RongIMClient.ErrorCode e) {
-
-                                }
-                            });
+                           //TODO RONG CONNECT
+                            rongConnect(token);
                         }
                     }
                     break;
@@ -342,5 +324,29 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         NToast.shortToast(mContext, R.string.login_success);
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
         finish();
+    }
+
+    private void rongConnect(String token){
+        RongIM.connect(token, new RongIMClient.ConnectCallback() {
+            @Override
+            public void onTokenIncorrect() {
+                Log.e(TAG, "reToken Incorrect");
+            }
+
+            @Override
+            public void onSuccess(String s) {
+                connectResultId = s;
+                NLog.e("connect", "onSuccess userid:" + s);
+                editor.putString(SealConst.SEALTALK_LOGIN_ID, s);
+                editor.apply();
+                SealUserInfoManager.getInstance().openDB();
+                request(SYNC_USER_INFO, true);
+            }
+
+            @Override
+            public void onError(RongIMClient.ErrorCode e) {
+
+            }
+        });
     }
 }

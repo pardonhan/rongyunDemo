@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RongCloudJcenter-master.iml" filepath="$PROJECT_DIR$/RongCloudJcenter-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rongyunDemo02.iml" filepath="$PROJECT_DIR$/rongyunDemo02.iml" />
       <module fileurl="file://$PROJECT_DIR$/seal/seal.iml" filepath="$PROJECT_DIR$/seal/seal.iml" />
     </modules>
   </component>

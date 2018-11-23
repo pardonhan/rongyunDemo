@@ -129,7 +129,7 @@ public class SealUserInfoManager implements OnDataListener {
         sInstance = new SealUserInfoManager(context);
     }
 
-    /**
+    /**.
      *修改数据库的存贮路径为.../appkey/userID/,
      *必须确保userID存在后才能初始化DBManager
      */
